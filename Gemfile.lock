@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/anjlab/bootstrap-rails.git
-  revision: 206c1f542f7a479393f75e0da6ed9532cf5810ca
+  revision: 8826a3bfbbcfb18709f0e8bb0eff9cf921a479c3
   specs:
     anjlab-bootstrap-rails (3.0.0.3)
       railties (>= 3.0)
@@ -36,9 +36,9 @@ GEM
     arel (4.0.0)
     atomic (1.1.14)
     builder (3.1.4)
-    coffee-rails (4.0.0)
+    coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0.beta, < 5.0)
+      railties (>= 4.0.0, < 5.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -60,6 +60,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -120,6 +121,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  pg
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
