@@ -1,0 +1,29 @@
+<div class="container">
+
+<div id="homepage-intro">
+	<h2>The L. H. Bailey Hortorium Herbarium (BH) at Cornell University is one of the largest university-affiliated collections of preserved plant material in North America.</h2>
+</div>	
+
+<div class="row" id="resources-row">
+
+	<%= render partial: 'major_resource', locals: { img: "vh.jpg", 
+																				 					name: VIRTUAL_HERBARIUM, 
+																				 					description: "This is Virtual Herbarium.",
+																				 					link: LINK_TO_VH } %>
+
+	<%= render partial: 'major_resource', locals: { img: "tcf.JPG",
+																									name: TCF,
+																									description: "This is Tompkins County Flora Project",
+																									link: LINK_TO_TCF } %>
+	<%= render partial: 'major_resource', locals: { img: "cupac.jpg",
+																									name: CUPAC,
+																									description: "CUPAC(Cornell University Plant Anatomy Collection) is an historically important collection of anatomical slide preparations of a wide array of plant parts.",
+																									link: LINK_TO_CUPAC } %>
+	<%= render partial: 'major_resource', locals: { img: "ps.jpg",
+																									name: PLANT_SYSTEMATICS,
+																									description: "This is Plant Systematics.",
+																									link: LINK_TO_PS } %>
+
+</div>
+
+</div>

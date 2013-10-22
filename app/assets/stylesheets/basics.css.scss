@@ -1,0 +1,49 @@
+// Place all the styles related to the basics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background: url(/assets/cloudy.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar.transparent {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.navbar .nav {
+	margin-top: 35px; 
+	li > a{
+  	text-shadow: ghostwhite 0.08em 0.08em;
+	}
+}
+
+.logo {
+	height: 60px;
+}
+
+#homepage-intro {
+	margin-top: 180px;
+	h2 {
+		color: ghostwhite;
+	}
+}
+
+#resources-row {
+	margin-top: 80px;
+}
+
+.thumbnail {
+	background-color: rgba(255,255,255,0.7);
+	height: 600px;
+	h3 {
+		font-size: 20px;
+	}
+	img {
+		width: 245px;
+		height: 369px;
+	}
+}

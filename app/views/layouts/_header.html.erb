@@ -1,0 +1,62 @@
+      <!-- Fixed navbar -->
+      <div class="navbar transparent navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          <%= link_to image_tag('logo.gif', class: "logo"), root_path, class: "navbar-brand" %>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+
+              <li><%= link_to "About", "#" %></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+
+                  <li class="dropdown-header">Major</li>
+                  <li><%= render 'shared/link_to_vh' %></li>
+                  <li><%= render 'shared/link_to_tcf' %></li>
+                  <li><%= render 'shared/link_to_cupac' %></li>
+                  <li><%= render 'shared/link_to_ps' %></li>
+
+                  <li class="divider"></li>
+
+                  <li class="dropdown-header">Additional</li>
+                  <li><%= link_to "Plant Pathology Herbarium (CUP)", "http://www.plantpath.cornell.edu/CUPpages/" %></li>
+                  <li><%= link_to "Paleobotanical Holdings", "http://bhort.bh.cornell.edu/paleo/fossils.html" %></li>
+                  <li><%= link_to "Horticultural Catalogue Collection", "http://bhort.bh.cornell.edu/newherb/catalogs.html" %></li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collections <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Palm Collection", "http://bhort.bh.cornell.edu/newherb/palms.html" %></li>
+                  <li><%= link_to "Bryophyte Collection", "http://bhort.bh.cornell.edu/newherb/bryophyte.html" %></li>
+                  <li><%= link_to "Muller Oak Collection", "http://bhort.bh.cornell.edu/newherb/oaks.html" %></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hortorium <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Bailey Hortorium", "http://plantbio.cornell.edu/cals/plbio/hortorium/index.cfm" %></li>
+                  <li><%= link_to "Hortorium Library", "http://plantbio.cornell.edu/cals/plbio/hortorium/bhortlibr.cfm" %></li>
+                </ul>
+              </li>
+
+              <li class="pull-right"><%= link_to "Contact", "#" %></li>
+
+            </ul>
+            <%= link_to image_tag('cornell-logo.gif', class: "logo"), "http://www.cornell.edu", class: "navbar-brand pull-right" %>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
