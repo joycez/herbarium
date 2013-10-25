@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+.main {
+	margin-top: 150px;
+}
+
 .navbar.transparent {
 	background-color: rgba(255,255,255,0.7);
 }
@@ -17,7 +21,7 @@ body {
 .navbar .nav {
 	margin-top: 35px; 
 	li > a{
-  	text-shadow: ghostwhite 0.08em 0.08em;
+  	text-shadow: 0 1px 0 #fff;
 	}
 }
 
@@ -26,7 +30,6 @@ body {
 }
 
 #homepage-intro {
-	margin-top: 180px;
 	h2 {
 		color: ghostwhite;
 	}
@@ -38,7 +41,11 @@ body {
 
 .thumbnail {
 	background-color: rgba(255,255,255,0.7);
-	height: 600px;
+	height: 570px;
+	text-align: center;
+	.caption {
+		text-align: left;
+	}
 	h3 {
 		font-size: 20px;
 	}
@@ -46,4 +53,38 @@ body {
 		width: 245px;
 		height: 369px;
 	}
+}
+
+
+//about page
+.sidebar {
+	background-color: rgba(255,255,255,0.7);
+}
+
+.about-main {
+	background-color: rgba(255,255,255,0.7);	
+}
+
+.about-section {
+	padding: 20px;
+	overflow: auto;
+}
+
+.section-header {
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 20px;
+	h1 {
+		font-size: 30px;
+		text-shadow: 0 1px 0 #fff;
+	}
+}
+
+.section-contents:first-letter {
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.section-image {
+	float: left;
+	margin: 10px;
 }

@@ -1,0 +1,49 @@
+<div class="container main">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="sidebar">
+				<ul class="nav sidenav">
+					<li class="active"><a href="#overview">Overview</a></li>
+					<li><a href="#history">History</a></li>
+					<li>
+						<a href="#botanists">Botanists</a>
+						<ul class="nav">
+							<li><a href="#ALAndrews">A. LeRoy Andrews</a></li>
+							<li><a href="#GFAtkinson">George F. Atkinson</a></li>
+							<li><a href="#EZBailey">Ethel Z. Bailey</a></li>
+							<li><a href="#LHBailey">Liberty Hyde Bailey</a></li>
+							<li><a href="#SHBurnham">Stewart H. Burnham</a></li>
+							<li><a href="#RTClausen">Robert T. Clausen</a></li>
+							<li><a href="#WRDudley">William R. Dudley</a></li>
+							<li><a href="#AJEames">Arthur J. Eames</a></li>
+							<li><a href="#GLawrence">George Lawrence</a></li>
+							<li><a href="#HMann">Horace Mann, Jr.</a></li>
+							<li><a href="#HEMoore">Harold E. Moore, Jr.</a></li>
+							<li><a href="#WCMusenscher">Walter C. Muenscher</a></li>
+							<li><a href="#WWRowlee">Willard W. Rowlee</a></li>
+							<li><a href="#JKSmall">John K. Small</a></li>
+							<li><a href="#KMWiegand">Karl M. Wiegand</a></li>																																		
+						</ul>					
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="col-md-9 about-main">
+			<%= render partial: 'basics/about_section', locals: { id: "overview",
+																														title: "Overview",
+																														img: nil,
+																														contents: "The L. H. Bailey Hortorium Herbarium (BH) at Cornell University is one of the largest university-affiliated collections of preserved plant material in North America. It includes Cornell's Wiegand Herbarium (CU), which was merged with BH in 1977. The combined herbaria now number ca. 860,000 (maybe more or maybe less) specimens of algae, bryophytes, and vascular plants." } %>
+			<%= render partial: 'basics/about_section', locals: { id: "history",
+																														title: "History",
+																														img: "history.jpg",
+																														contents: "The Hortorium was given to Cornell University by Liberty Hyde Bailey in 1935, including 140,000 herbarium specimens of cultivated and economically important plants from throughout the Western Hemisphere, Europe, and China. The Wiegand Herbarium at Cornell was founded in 1869, and emphasized native and naturalized flora of central New York, the Northeast, other portions of North America, and the Old World. In 1977, the two herbaria were combined into a 660,000-specimen collection, rich in both cultivated and wild material. Since that time, the collection has grown to ca. 860,000 specimens." } %>
+			<%= render partial: 'basics/about_section', locals: { id: "botanists",
+																														title: "Botanists",
+																														img: nil,
+																														contents: "Several botanists have been important to the study and collection of wild and cultivated plants that are represented in the BH Herbarium, including those listed on the sidebar." } %>
+
+
+		</div>
+	</div>
+</div>

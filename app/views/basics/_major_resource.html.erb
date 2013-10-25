@@ -1,10 +1,9 @@
 	<div class="col-md-3">
 		<div class="thumbnail">
-    	<%= image_tag img %>
+    	<%= link_to(image_tag(img), link) %>
 	    <div class="caption">
-	      <h3><%= name %></h3>
+	      <h3><%= link_to name, link %></h3>
 	      <p><%= description %></p>
-	      <p class="pull-right"><%= link_to "more", link %></p>
 	    </div>
     </div>
 	</div>

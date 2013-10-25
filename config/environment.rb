@@ -5,10 +5,10 @@ require File.expand_path('../application', __FILE__)
 Herbarium::Application.initialize!
 
 
-VIRTUAL_HERBARIUM = 'Virtual Herbarium'
+VH = 'Virtual Herbarium'
 TCF = 'Tompkins County Flora'
 CUPAC = 'CUPAC'
-PLANT_SYSTEMATICS = 'Plant Systematics'
+PS = 'Plant Systematics'
 
 LINK_TO_VH = '#'
 LINK_TO_TCF = 'http://tcf.bh.cornell.edu'

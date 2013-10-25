@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container main">
 
 <div id="homepage-intro">
 	<h2>The L. H. Bailey Hortorium Herbarium (BH) at Cornell University is one of the largest university-affiliated collections of preserved plant material in North America.</h2>
@@ -7,7 +7,7 @@
 <div class="row" id="resources-row">
 
 	<%= render partial: 'major_resource', locals: { img: "vh.jpg", 
-																				 					name: VIRTUAL_HERBARIUM, 
+																				 					name: VH, 
 																				 					description: "This is Virtual Herbarium.",
 																				 					link: LINK_TO_VH } %>
 
@@ -20,7 +20,7 @@
 																									description: "CUPAC(Cornell University Plant Anatomy Collection) is an historically important collection of anatomical slide preparations of a wide array of plant parts.",
 																									link: LINK_TO_CUPAC } %>
 	<%= render partial: 'major_resource', locals: { img: "ps.jpg",
-																									name: PLANT_SYSTEMATICS,
+																									name: PS,
 																									description: "This is Plant Systematics.",
 																									link: LINK_TO_PS } %>
 
