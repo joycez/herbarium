@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  fullname: MyString
+  intro: MyText
+  connection: MyText
+  bio: MyText
+  born: 1
+  died: 1
+
+two:
+  name: MyString
+  fullname: MyString
+  intro: MyText
+  connection: MyText
+  bio: MyText
+  born: 1
+  died: 1

@@ -8,21 +8,8 @@
 					<li>
 						<a href="#botanists">Botanists</a>
 						<ul class="nav">
-							<li><a href="#ALAndrews">A. LeRoy Andrews</a></li>
-							<li><a href="#GFAtkinson">George F. Atkinson</a></li>
-							<li><a href="#EZBailey">Ethel Z. Bailey</a></li>
-							<li><a href="#LHBailey">Liberty Hyde Bailey</a></li>
-							<li><a href="#SHBurnham">Stewart H. Burnham</a></li>
-							<li><a href="#RTClausen">Robert T. Clausen</a></li>
-							<li><a href="#WRDudley">William R. Dudley</a></li>
-							<li><a href="#AJEames">Arthur J. Eames</a></li>
-							<li><a href="#GLawrence">George Lawrence</a></li>
-							<li><a href="#HMann">Horace Mann, Jr.</a></li>
-							<li><a href="#HEMoore">Harold E. Moore, Jr.</a></li>
-							<li><a href="#WCMusenscher">Walter C. Muenscher</a></li>
-							<li><a href="#WWRowlee">Willard W. Rowlee</a></li>
-							<li><a href="#JKSmall">John K. Small</a></li>
-							<li><a href="#KMWiegand">Karl M. Wiegand</a></li>																																		
+
+							<%= render partial: 'basics/botanists_sidebar', collection: @botanists, as: :botanist %>																																		
 						</ul>					
 					</li>
 				</ul>
