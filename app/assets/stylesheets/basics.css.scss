@@ -81,10 +81,13 @@ body {
 
 .section-contents:first-letter {
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 45px;
+	float: left;
+	margin-right: 5px;
+	line-height: 0.9;
 }
 
 .section-image {
 	float: left;
-	margin: 10px;
+	margin-right: 10px;
 }
