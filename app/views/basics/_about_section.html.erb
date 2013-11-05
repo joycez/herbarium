@@ -1,7 +1,10 @@
-			<div class="about-section" id="<%= id %>">
+			<section class="about-section" id="<%= id %>">
 				<div class="section-header"><h1><%= title %></h1></div>
 				<% if img %>
 					<%= image_tag img, class: "section-image" %>
 				<% end %>
 				<p class="section-contents"><%= contents %></p>
-			</div>
+				<% if id == "botanists" %>
+					<%= render partial: 'basics/botanist', collection: @botanists, as: :botanist %>
+				<% end %>
+			</section>

@@ -1,5 +1,10 @@
-			<div class="section-botanist" id="<%= id %>">
-				<div class="botanist-header"><h2><%= full_name %><span><%= from %> - <%= to %></span></h2></div>
-				<%= image_tag img, class: "section-image" %>
-				<p class="botanist-bio"><%= bio %></p>
+			<% id = name_id(botanist.first_name, botanist.last_name) %>
+			<div class="botanist" id=<%=id%>>
+				<div class="botanist-header">
+					<h2><%= full_name([botanist.first_name, botanist.middle_name, botanist.last_name]) %>
+							<span>(<%= botanist.born %> - <%= botanist.died %>)</span>
+					</h2>
+				</div>
+				<%= image_tag id+'.jpg', class: "section-image botanist-image" %>
+				<p class="botanist-bio"><%= simple_format(botanist.bio) %></p>
 			</div>

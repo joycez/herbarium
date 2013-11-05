@@ -59,10 +59,13 @@ body {
 //about page
 .sidebar {
 	background-color: rgba(255,255,255,0.7);
+	padding-bottom: 10px;
 }
 
-.about-main {
-	background-color: rgba(255,255,255,0.7);	
+#about-main {
+	background-color: rgba(255,255,255,0.7);
+	overflow: auto;
+	//height: 200px;
 }
 
 .about-section {
@@ -91,3 +94,37 @@ body {
 	float: left;
 	margin-right: 10px;
 }
+
+
+h2 {
+	font-size: 22px;
+}
+
+.botanist {
+	margin-bottom: 30px;
+}
+
+.botanist-image {
+	width: 155px;
+	height: 230px;
+}
+
+.sidebar .nav .nav > li > a {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 30px;
+	font-size: 90%;
+}
+
+.botanist-sidebar-years {
+	padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+

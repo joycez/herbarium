@@ -1,14 +1,13 @@
 <div class="container main">
 	<div class="row">
 		<div class="col-md-3">
-			<div class="sidebar">
+			<div class="sidebar affix" id="sidebar-nav">
 				<ul class="nav sidenav">
 					<li class="active"><a href="#overview">Overview</a></li>
 					<li><a href="#history">History</a></li>
 					<li>
 						<a href="#botanists">Botanists</a>
 						<ul class="nav">
-
 							<%= render partial: 'basics/botanists_sidebar', collection: @botanists, as: :botanist %>																																		
 						</ul>					
 					</li>
@@ -16,7 +15,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-9 about-main">
+		<div class="col-md-9" data-spy="scroll" data-target="#sidebar-nav" id="about-main">
 			<%= render partial: 'basics/about_section', locals: { id: "overview",
 																														title: "Overview",
 																														img: nil,
