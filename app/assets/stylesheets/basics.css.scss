@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//universal
 body {
 	background: url(/assets/cloudy.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -29,6 +30,8 @@ body {
 	height: 60px;
 }
 
+
+//homepage
 #homepage-intro {
 	h2 {
 		color: ghostwhite;
@@ -100,8 +103,17 @@ h2 {
 	font-size: 22px;
 }
 
+ul#botanists-list {
+	padding-left: 0;
+	list-style-type: none;
+	li:first-child {
+		margin-top: 60px;
+	}
+}
+
+
 .botanist {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 .botanist-image {
@@ -118,6 +130,10 @@ h2 {
 
 .botanist-sidebar-years {
 	padding-left: 5px;
+}
+
+li.active {
+	background-color: ghostwhite;
 }
 
 

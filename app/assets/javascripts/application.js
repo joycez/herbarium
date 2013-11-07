@@ -16,3 +16,10 @@
 //= require twitter/bootstrap
 //= require_tree .
 
+// avoid the anchor being coverred by the top nav bar
+var shiftWindow = function() { scrollBy(0, -130) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
+
+// scrollspy
+// jQuery('body').scrollspy({ target: '#sidebar-nav' });

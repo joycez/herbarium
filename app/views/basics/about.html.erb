@@ -3,14 +3,15 @@
 		<div class="col-md-3">
 			<div class="sidebar affix" id="sidebar-nav">
 				<ul class="nav sidenav">
-					<li class="active"><a href="#overview">Overview</a></li>
+					<li><a href="#overview">Overview</a></li>
 					<li><a href="#history">History</a></li>
 					<li>
 						<a href="#botanists">Botanists</a>
+					</li>
 						<ul class="nav">
 							<%= render partial: 'basics/botanists_sidebar', collection: @botanists, as: :botanist %>																																		
 						</ul>					
-					</li>
+					
 				</ul>
 			</div>
 		</div>

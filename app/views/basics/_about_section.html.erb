@@ -5,6 +5,8 @@
 				<% end %>
 				<p class="section-contents"><%= contents %></p>
 				<% if id == "botanists" %>
-					<%= render partial: 'basics/botanist', collection: @botanists, as: :botanist %>
+					<ul id="botanists-list">
+						<%= render partial: 'basics/botanist', collection: @botanists, as: :botanist %>
+					</ul>
 				<% end %>
 			</section>

@@ -1,5 +1,5 @@
 			<% id = name_id(botanist.first_name, botanist.last_name) %>
-			<div class="botanist" id=<%=id%>>
+			<li class="botanist" id=<%=id%>>
 				<div class="botanist-header">
 					<h2><%= full_name([botanist.first_name, botanist.middle_name, botanist.last_name]) %>
 							<span>(<%= botanist.born %> - <%= botanist.died %>)</span>
@@ -7,4 +7,4 @@
 				</div>
 				<%= image_tag id+'.jpg', class: "section-image botanist-image" %>
 				<p class="botanist-bio"><%= simple_format(botanist.bio) %></p>
-			</div>
+			</li>
