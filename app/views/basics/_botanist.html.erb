@@ -1,10 +1,23 @@
 			<% id = name_id(botanist.first_name, botanist.last_name) %>
 			<li class="botanist" id=<%=id%>>
 				<div class="botanist-header">
-					<h2><%= full_name([botanist.first_name, botanist.middle_name, botanist.last_name]) %>
+					<h2><%= name_title([botanist.first_name, botanist.middle_name, botanist.last_name]) %>
 							<span>(<%= botanist.born %> - <%= botanist.died %>)</span>
 					</h2>
 				</div>
 				<%= image_tag id+'.jpg', class: "section-image botanist-image" %>
-				<p class="botanist-bio"><%= simple_format(botanist.bio) %></p>
+				<div class="botanist-info botanist-intro">
+					<span class="botanist-header-span"><%= full_name([botanist.first_name, botanist.middle_name, botanist.last_name]) %></span>
+					<%= botanist.intro %>
+				</div>
+				<div class="botanist-info botanist-connection"><span class="botanist-header-span">The Cornell Connection: </span><%= botanist.cornell_connection %></div>
+				<div class="botanist-info botanist-bio"><%= simple_format(botanist.bio) %></div>
+
+				<% if botanist.resources.any? %>
+				<ul class="botanist-resources botanist-info"><span class="botanist-header-span">For further information please see: </span>
+					<% botanist.resources.all.each do |r| %>
+						<li><%= r.content %></li>
+					<% end %>
+				</ul>
+				<% end %>
 			</li>

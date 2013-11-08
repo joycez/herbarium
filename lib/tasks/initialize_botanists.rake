@@ -3,6 +3,9 @@ namespace :db do
   task populate: :environment do
     initialize_botanists
   end
+  task resources: :environment do
+    store_resources
+  end
 end
 
 def initialize_botanists
@@ -429,3 +432,60 @@ def initialize_botanists
                                     died: 1942 }                                                                                                                                            
     ])
 end
+
+
+def store_resources
+  b = Botanist.find_by_middle_name("LeRoy")
+  b.resources.create!(content: "Cornell University Faculty. 1961. Albert LeRoy Andrews, Necrology of the faculty of Cornell University.")
+  b.resources.create!(content: "Steere, William Campbell. 1962. Albert LeRoy Andrews, 1878-1961, The Bryologist, Vol. 65, No. 1.")
+
+  b = Botanist.find_by_middle_name("Francis")
+  b.resources.create!(content: "Fitzpatrick, Harry M.  1919.  George Francis Atkinson, Science Vol. XLIX, No. 1268, pp. 371-372.")
+
+  b = Botanist.find_by_middle_name("Zoe")
+  b.resources.create!(content: "Bates, D. M. 1989. Ethel Zoe Bailey, 1889-1983. Baileya 23 (1) pp.1-4.")
+
+  b = Botanist.find_by_middle_name("Henry")
+  b.resources.create!(content: "Burnham, S. H., & R. A. Latham. 1914-1925. The flora of the Town of Southold, Long Island and Gardiner’s Island. Torreya 14: 201-225, 229-254; 17: 111-122; 21: 1-11, 28-33; 23: 3-9, 25-31; 24: 22-32; 25: 71-83.")
+  b.resources.create!(content: "Cattell, J. M., & J. Cattell (eds.). 1927. American Men of Science, fourth edition. The Science Press, N.Y.")
+  b.resources.create!(content: "Dirig, R. 1994. The floristic and lichenological work of Roy Latham on eastern Long Island, New York. Mycotaxon 51: 325-340.")
+
+  b = Botanist.find_by_middle_name("Theodore")
+  b.resources.create!(content: "Bates, David M. 1984. Robert Theodore Clausen, December 26, 1911-December 31, 1981. Gentes Herbarum 12 (3), pp. 1-7.")
+
+  b = Botanist.find_by_middle_name("Russel")
+  b.resources.create!(content: "Dudley Memorial Volume. 1913. Leland Stanford Junior University Publications, University Series, Stanford University, CA.")
+
+  b = Botanist.find_by_middle_name("Johnson")
+  b.resources.create!(content: "Wilde, Mary H. 1970. Arthur Johnson Eames, Bulletin of the Torrey Botanical Club, vol. 97, no. 1, pp. 67-72.")
+
+  b = Botanist.find_by_middle_name("H. M.")
+  b.resources.create!(content: "Obituary. 1978. News Release, Carnegie-Mellon University, #87-78.")
+
+  b = Botanist.find_by_first_name("Horace")
+  b.resources.create!(content: "Horace Mann Papers. Library of the Gray Herbarium, Harvard University. www.herbaria.harvard.edu/Libraries")
+  b.resources.create!(content: "Stafleu, Frans A. and Cowan, Richard S. 1981. Taxonomic Literature, 2nd edition, vol. 3, pp.278-279.")
+
+  b = Botanist.find_by_middle_name("Emery")
+  b.resources.create!(content: "Bates, David M. 1982. Harold E. Moore, Jr. - A Remembrance, Principes 26 (1), pp. 3-8.")
+  b.resources.create!(content: "H. E. Moore, Jr. Memorial Volume. 1982. Various articles throughout volume. Principes 26 (1-4).")
+
+  b = Botanist.find_by_middle_name("Conrad")
+  b.resources.create!(content: "Clovis, Jesse F. 1958. The \"Wizard of Weeds\" - A Tribute, Castanea 23 (1), pp. 22-24.")
+
+  b = Botanist.find_by_middle_name("Winfield")
+  b.resources.create!(content: "Obituary. 1923. Willard W. Rowlee '88, Cornell Alumni News vol. 25, pp. 506.")
+
+  b = Botanist.find_by_middle_name("Kunkel")
+  b.resources.create!(content: "Barnhart, John H. 1938. The Passing of Doctor Small, Journal of The New York Botanical Garden 39 (460), pp. 73-79.")
+
+  b = Botanist.find_by_middle_name("McKay")
+  b.resources.create!(content: "Obituary. 1942. Karl M. Wiegand, Science (May), pp. 449.")
+end
+
+
+
+
+
+
+
