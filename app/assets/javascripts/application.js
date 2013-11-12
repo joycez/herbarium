@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.turbolinks
 //= require twitter/bootstrap
 //= require_tree .
 
@@ -22,4 +23,14 @@ if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
 
 // scrollspy
-jQuery('body').scrollspy({ target: '#sidebar-nav' });
+//jQuery('body').scrollspy({ target: '#sidebar-nav' });
+
+$(function() {
+  scrollSpy();
+});
+$(window).bind('page:change', function() {
+  scrollSpy();
+});
+function scrollSpy() {
+  jQuery('body').scrollspy({ target: '#sidebar-nav' });
+}
