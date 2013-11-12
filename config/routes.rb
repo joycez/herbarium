@@ -6,6 +6,7 @@ Herbarium::Application.routes.draw do
   root 'basics#home'
 
   get '/about' => 'basics#about'
+  get '/contact' => 'basics#contact'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

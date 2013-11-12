@@ -1,0 +1,75 @@
+<div class="main container">
+
+	<div id="contact-container">
+
+		<!-- general contact information -->
+		<section class="row contact-section">
+
+			<div class="contact-header">
+				<h1 class="shadow">General Contact Information</h1>
+			</div>
+
+			<div class="col-md-6">
+				<p>The Hortorium Herbarium is housed on the fourth floor of Mann Library on the Cornell University campus. 
+					Stop at the Tower Road information booth (marked in blue on map below) for instructions on parking. 
+					Once inside Mann Library, look for the Hortorium elevator near the Mannible Cafe. 
+					Take the elevator to the fourth floor where you will find the Herbarium in Room 440.</p>
+			</div>
+
+			<div class="col-md-5">
+				<table class="table">
+	        <tbody>
+	          <tr>
+	            <td>Email:</td>
+	            <td><a href="mailto:herbarium@cornell.edu">herbarium@cornell.edu</td>
+	          </tr>
+	          <tr>
+	            <td>Fax:</td>
+	            <td>(607) 255-5407</td>
+	          </tr>
+	          <tr>
+	            <td>Location:</td>
+	            <td>440 Mann Library Building, Cornell University</td>
+	          </tr>
+	          <tr>
+	            <td>Hours:</td>
+	            <td>9 am to 4:30 pm, Monday through Friday</td>
+	          </tr>          
+	        </tbody>
+	      </table>
+			</div>		
+
+		</section>
+
+		<!-- contact curator -->
+		<%= render partial: 'basics/contact_section', locals: { name: 			"Kevin C. Nixon",
+																														website:    "http://plantbio.cornell.edu/cals/plbio/directory/faculty.cfm?netId=kcn2", 
+																														title: 			"Curator",
+																														img: 				"kevin.jpg",
+																														interests: 	"Taxonomy and phylogenetics of Quercus, Fagaceae;
+																																				Platanaceae; higher level phylogenetics",
+																														email: 			"kcn2@cornell.edu",
+																														phone: 			"7975",
+																														room: 			"406"} %>	
+
+		<!-- contact associate curator -->
+		<%= render partial: 'basics/contact_section', locals: { name: 			"Anna Stalter",
+																														website:    nil, 
+																														title: 			"Associate Curator",
+																														img: 				"anna.jpg",
+																														interests: 	"New York flora, emphasizing Tompkins County; Invasive plants",
+																														email: 			"ams15@cornell.edu",
+																														phone: 			"1052",
+																														room: 			"446"} %>
+
+		<!-- contact assistant curator -->
+		<%= render partial: 'basics/contact_section', locals: { name: 			"Peter Fraissinet",
+																														website:    nil, 
+																														title: 			"Assistant Curator",
+																														img: 				"placeholder.jpg",
+																														interests: 	"Botanical documentation and literature",
+																														email: 			"pf13@cornell.edu",
+																														phone: 			"0443",
+																														room: 			"444"} %>
+	</div>																													
+</div>

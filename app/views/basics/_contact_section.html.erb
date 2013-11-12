@@ -1,0 +1,41 @@
+	<section class="row contact-section">
+
+		<div class="contact-header">
+			<h1 class="shadow">
+        <% if website.nil? %>
+          <%= name %>
+        <% else %>
+          <%= link_to name, website %>
+        <% end %>
+        <span>, <%= title %></span>
+      </h1>
+		</div>
+
+		<div class="col-md-3">
+			<%= image_tag img, class: "section-image contact-image" %>
+		</div>
+
+		<div class="col-md-3">
+			<strong>Interests: </strong><%= interests %>
+		</div>
+
+		<div class="col-md-5">
+			<table class="table">
+        <tbody>
+          <tr>
+            <td>Email:</td>
+            <td><a href="mailto:<%= email %>"><%= email %></td>
+          </tr>
+          <tr>
+            <td>Telephone:</td>
+            <td>(607) 255-<%= phone %></td>
+          </tr>
+          <tr>
+            <td>Location:</td>
+            <td><%= room %> Mann Library Building</td>
+          </tr>         
+        </tbody>
+      </table>
+		</div>		
+
+	</section>

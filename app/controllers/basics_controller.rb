@@ -7,4 +7,7 @@ class BasicsController < ApplicationController
 		@botanists = Botanist.find(:all, order: 'botanists.born')
 	end
 
+	def contact
+	end
+
 end

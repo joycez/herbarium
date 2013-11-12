@@ -19,8 +19,13 @@ body {
 	margin-top: 150px;
 }
 
-.nav {
+
+.shadow {
 	text-shadow: 0 1px 0 #fff;
+}
+
+h1 {
+	font-size: 30px;
 }
 
 
@@ -102,10 +107,6 @@ li.active {
 .section-header {
 	border-bottom: 1px solid #eeeeee;
 	margin-bottom: 20px;
-	h1 {
-		font-size: 30px;
-		text-shadow: 0 1px 0 #fff;
-	}
 }
 
 .section-contents:first-letter {
@@ -158,6 +159,25 @@ ul#botanists-list {
 	padding-left: 0;
 }
 
+// contact page
+#contact-container {
+	background-color: $semi-transparent-white;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contact-section {
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom: 1px solid #eeeeee;
+	h1 {
+		margin: 0 0 20px 0;
+	}
+	.contact-image {
+		width: 130px;
+		height: 130px;
+	}
+}
 
 
 
