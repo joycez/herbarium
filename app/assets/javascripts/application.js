@@ -22,4 +22,4 @@ if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
 
 // scrollspy
-// jQuery('body').scrollspy({ target: '#sidebar-nav' });
+jQuery('body').scrollspy({ target: '#sidebar-nav' });
