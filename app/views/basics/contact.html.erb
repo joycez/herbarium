@@ -3,43 +3,7 @@
 	<div id="contact-container">
 
 		<!-- general contact information -->
-		<section class="row contact-section">
-
-			<div class="contact-header">
-				<h1 class="shadow">General Contact Information</h1>
-			</div>
-
-			<div class="col-md-6">
-				<p>The Hortorium Herbarium is housed on the fourth floor of Mann Library on the Cornell University campus. 
-					Stop at the Tower Road information booth (marked in blue on map below) for instructions on parking. 
-					Once inside Mann Library, look for the Hortorium elevator near the Mannible Cafe. 
-					Take the elevator to the fourth floor where you will find the Herbarium in Room 440.</p>
-			</div>
-
-			<div class="col-md-5">
-				<table class="table">
-	        <tbody>
-	          <tr>
-	            <td>Email:</td>
-	            <td><a href="mailto:herbarium@cornell.edu">herbarium@cornell.edu</td>
-	          </tr>
-	          <tr>
-	            <td>Fax:</td>
-	            <td>(607) 255-5407</td>
-	          </tr>
-	          <tr>
-	            <td>Location:</td>
-	            <td>440 Mann Library Building, Cornell University</td>
-	          </tr>
-	          <tr>
-	            <td>Hours:</td>
-	            <td>9 am to 4:30 pm, Monday through Friday</td>
-	          </tr>          
-	        </tbody>
-	      </table>
-			</div>		
-
-		</section>
+		<%= render partial: 'basics/general_contact_info' %>
 
 		<!-- contact curator -->
 		<%= render partial: 'basics/contact_section', locals: { name: 			"Kevin C. Nixon",
@@ -66,10 +30,40 @@
 		<%= render partial: 'basics/contact_section', locals: { name: 			"Peter Fraissinet",
 																														website:    nil, 
 																														title: 			"Assistant Curator",
-																														img: 				"placeholder.jpg",
+																														img: 				"prep-room.jpg",
 																														interests: 	"Botanical documentation and literature",
 																														email: 			"pf13@cornell.edu",
 																														phone: 			"0443",
 																														room: 			"444"} %>
+
+		<!-- contact professor -->
+		<section class="row contact-section">
+
+			<%= render partial: 'basics/contact_professor', locals: { name: 		 "Dr. Jim Reveal",
+																																website: 	 "http://www.plantsystematics.org/reveal/",
+																																title:   	 "Adjunct Professor",
+																																img: 		 	 "reveal.jpg",
+																																interests: "Polygonaceae subfamily Eriogonoideae; suprageneric nomenclature; botanical history; floristics of western U.S."} %>
+
+			<%= render partial: 'basics/contact_professor', locals: { name: 		 "Dr. Vern Durkee",
+																																website: 	 nil,
+																																title:   	 "Visiting Professor",
+																																img: 		 	 "durkee.jpg",
+																																interests: "Acanthaceae, flora of Tompkins County"} %>
+
+		</section>
+
+		<section class="row  contact-section">
+
+			<%= render partial: 'basics/volunteer', locals: { name: "Linda Blossom",
+																												img: 	"blossom.jpg"} %>
+			<%= render partial: 'basics/volunteer', locals: { name: "Susanne Lorbeer",
+																												img: 	"lorbeer.jpg"} %>
+			<%= render partial: 'basics/volunteer', locals: { name: "Rosemarie Parker",
+																												img: 	"parker.jpg"} %>																												
+
+		</section>
+
+
 	</div>																													
 </div>

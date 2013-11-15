@@ -15,6 +15,28 @@ body {
   background-size: cover;
 }
 
+html, body {
+	height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto 0;
+  padding: 0 0 60px;
+}
+
+footer {
+	a {
+		color: black;
+	}
+	padding: 10px 0 10px 0;
+	background-color: rgba(255,255,255,0.4);
+	text-align: center;
+}
+
+	
+
 .main {
 	margin-top: 150px;
 }
@@ -28,6 +50,9 @@ h1 {
 	font-size: 30px;
 }
 
+h2 {
+	font-size: 22px;
+}
 
 // top navbar
 .navbar.transparent {
@@ -178,6 +203,9 @@ ul#botanists-list {
 		height: 130px;
 	}
 }
+
+
+
 
 
 

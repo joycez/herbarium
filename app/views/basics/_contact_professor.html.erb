@@ -1,0 +1,20 @@
+			<div class="contact-professor-section col-md-6">
+				<div class="contact-header">
+					<h2 class="shadow">
+						<% if website.nil? %>
+          		<%= name %>
+        		<% else %>
+          		<%= link_to name, website %>
+        		<% end %>,
+					<span><%= title %></span></h2>
+					</h2>
+				</div>
+
+				<div class="col-md-5">
+					<%= image_tag img, class: "section-image contact-image" %>
+				</div>
+
+				<div class="col-md-6">
+					<strong>Interests: </strong><%= interests %>
+				</div>
+			</div>
