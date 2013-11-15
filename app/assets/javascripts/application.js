@@ -25,12 +25,3 @@ window.addEventListener("hashchange", shiftWindow);
 // scrollspy
 //jQuery('body').scrollspy({ target: '#sidebar-nav' });
 
-$(function() {
-  scrollSpy();
-});
-$(window).bind('page:change', function() {
-  scrollSpy();
-});
-function scrollSpy() {
-  jQuery('body').scrollspy({ target: '#sidebar-nav' });
-}
