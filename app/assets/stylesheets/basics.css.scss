@@ -35,7 +35,6 @@ footer {
 	text-align: center;
 }
 
-	
 
 .main {
 	margin-top: 150px;
@@ -71,6 +70,9 @@ h2 {
 // homepage
 #homepage-intro {
 	color: ghostwhite;
+	h2 {
+		text-align: justify;
+	}
 }
 
 #resources-row {
