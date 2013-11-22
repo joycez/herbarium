@@ -10,4 +10,13 @@ class BasicsController < ApplicationController
 	def contact
 	end
 
+	def palm
+	end
+
+	def bryophyte
+	end
+
+	def oak
+	end
+
 end

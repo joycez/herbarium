@@ -53,10 +53,11 @@ h2 {
 	font-size: 22px;
 }
 
-// top navbar
-.navbar.transparent {
+.transparent {
 	background-color: $semi-transparent-white;
 }
+
+// top navbar
 
 .navbar .nav {
 	margin-top: 35px; 
@@ -83,9 +84,9 @@ h2 {
 }
 
 .thumbnail {
-	background-color: $semi-transparent-white;
 	height: 570px;
 	text-align: center;
+	border-radius: 0;
 	.caption {
 		text-align: left;
 	}
@@ -103,7 +104,6 @@ h2 {
 
 // about-sidebar
 .sidebar {
-	background-color: $semi-transparent-white;
 	padding-bottom: 10px;
 }
 
@@ -125,7 +125,6 @@ li.active {
 
 // about-main
 #about-main {
-	background-color: $semi-transparent-white;
 	overflow: auto;
 }
 
@@ -191,9 +190,8 @@ ul#botanists-list {
 
 // contact page
 #contact-container {
-	background-color: $semi-transparent-white;
 	width: 75%;
-	margin: 0 auto;
+	margin: 0 auto 0;
 }
 
 .contact-section {
@@ -212,6 +210,12 @@ ul#botanists-list {
 #LBailey {
 	padding-top: 100px;
 	margin-top: -100px;
+}
+
+// collection page
+.featurette-image {
+	width: 400px;
+	height: 400px;
 }
 
 

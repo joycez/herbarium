@@ -1,0 +1,23 @@
+<div class="row featurette">
+
+<% if right %>
+	<div class="col-md-8">
+    <h2 class="featurette-heading"><%= title %><span class="text-muted"><%= subtitle %></span></h2>
+    <p class="lead"><%= body %></p>
+  </div>
+  <div class="col-md-4">
+    <img class="featurette-image img-responsive" alt="400x400" src=<%= img %>>
+  </div>
+
+<% else %>
+  <div class="col-md-4">
+    <img class="featurette-image img-responsive" data-src="holder.js/400x400/auto" alt="400x400" src=<%= img %>>
+  </div>
+	<div class="col-md-8">
+    <h2 class="featurette-heading"><%= title %><span class="text-muted"><%= subtitle %></span></h2>
+    <p class="lead"><%= body %></p>
+  </div>
+
+<% end %>
+
+</div>
