@@ -6,7 +6,6 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -37,6 +36,7 @@ end
 
 group :development, :production do
 	gem 'pg'
+	gem 'mysql'
 end
 
 group :production do
