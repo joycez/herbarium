@@ -7,7 +7,7 @@ Herbarium::Application.initialize!
 
 VH = 'Virtual Herbarium'
 TCF = 'Tompkins County Flora'
-CUPAC = 'CUPAC'
+CUPAC = 'Plant Anatomy Collection'
 PS = 'Plant Systematics'
 
 LINK_TO_VH = '#'

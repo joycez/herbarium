@@ -3,7 +3,7 @@
 				<% if img %>
 					<%= image_tag img, class: "section-image" %>
 				<% end %>
-				<p class="section-contents"><%= contents %></p>
+				<p class="section-contents"><%= simple_format contents %></p>
 				<% if id == "botanists" %>
 					<ul id="botanists-list">
 						<%= render partial: 'basics/botanist', collection: @botanists, as: :botanist %>

@@ -19,4 +19,7 @@ class BasicsController < ApplicationController
 	def oak
 	end
 
+	def collections
+	end
+
 end

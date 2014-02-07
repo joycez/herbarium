@@ -10,6 +10,7 @@ Herbarium::Application.routes.draw do
   get '/palm' => 'basics#palm'
   get '/bryophyte' => 'basics#bryophyte'
   get '/oak' => 'basics#oak'
+  get '/additional-collections' => 'basics#collections'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
