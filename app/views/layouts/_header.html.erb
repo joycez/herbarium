@@ -8,6 +8,7 @@
               <span class="icon-bar"></span>
             </button>
 
+          <%= link_to image_tag('hortorium-logo.png', class: "logo"), "http://plantbio.cals.cornell.edu/hortorium/", class: "navbar-brand pull-left icon-logo" %>
           <%= link_to image_tag('logo.gif', class: "logo"), root_path, class: "navbar-brand" %>
           </div>
 
@@ -22,7 +23,8 @@
               <li><%= link_to "Contact", "/contact" %></li>
 
             </ul>
-            <%= link_to image_tag('cornell-logo.gif', class: "logo"), "http://www.cornell.edu", class: "navbar-brand pull-right", id: "cornell-logo" %>
+            <a id="department" class="pull-right shadow" href="http://plantbio.cals.cornell.edu/hortorium/">Department of</br> Plant Biology</a>            
+            <%= link_to image_tag('cornell-logo.gif', class: "logo pull-right"), "http://www.cornell.edu", class: "navbar-brand icon-logo" %>
           </div><!--/.nav-collapse -->
         </div>
       </div>

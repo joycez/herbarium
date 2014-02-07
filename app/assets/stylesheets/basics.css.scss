@@ -63,12 +63,26 @@ h2 {
 	margin-top: 35px; 
 }
 
+.navbar-brand {
+	padding: 25px 20px;
+}
+
 .logo {
+	height: 50px;
+}
+
+.icon-logo {
+	padding-right: 0;
 	height: 60px;
 }
 
-#cornell-logo {
-	padding-right: 0;
+#department {
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+	letter-spacing: 0.02em;
+	margin-top: 30px;
+	text-decoration: none;
 }
 
 // homepage
