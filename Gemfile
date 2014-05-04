@@ -36,12 +36,17 @@ end
 
 group :development, :production do
 	gem 'pg'
-	gem 'mysql'
+	gem 'mysql2'
 end
 
 group :production do
 	gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
+
+if RUBY_VERSION =~ /1.9/ # assuming you're running Ruby ~1.9
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
 end
 
 # Use ActiveModel has_secure_password

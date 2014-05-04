@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 namespace :db do
   desc "Fill database with botanists data"
   task populate: :environment do
