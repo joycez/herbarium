@@ -1,0 +1,307 @@
+*** Documentation ***
+
+
+=== Universal ===
+
+Q: How to change the 'BH' logo?
+A: 1. Put the image of the new logo into folder 'app/assets/images/'
+   2. Open file 'app/views/layouts/_header.html.erb'
+   3. Go to line 12 and replace 'logo.gif' with the name of the new logo
+
+Q: How to change the background image?
+A: 1. Put the image of the new image into folder 'app/assets/images/'
+   2. Open file 'app/assets/stylesheets/basics.css.scss'
+   3. Go to line 11 and replace 'sky.JPG' with the name of the new image
+
+Q: How to change the footer information?
+A: 1. Open file 'app/views/layouts/_footer.html.erb'
+   2. Edit the information
+   3. Do not edit or delete any tag in <>
+
+Q: How to edit the links for the major resources?
+A: 1. Open file 'config/environment.rb'
+   2. Edit the name or the link
+
+Q: How to edit the links for the additional resources?
+A: 1. Open file 'app/views/layouts/_dropdown_resources.html.erb'
+   2. Edit the link
+
+Q: How to edit the links for the collections?
+A: 1. Open file 'app/views/layouts/_dropdown_collections.html.erb'
+   2. Edit the link
+
+Q: How to edit the link for Hortorium?
+A: 1. Open file 'app/views/layouts/_header.html.erb'
+   2. Go to line 22 and edit the link
+
+
+=== Homepage ===
+
+Q: How to edit the headline?
+A: 1. Open file 'app/views/basics/home.html.erb'
+   2. Go to line 4 and edit the content
+
+Q: How to change the project image?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/home.html.erb'
+   3. For 'Virtual Herbarium', edit the name of the image in line 9.
+      For 'Tompkins County Flora', edit the name of the image in line 13.
+      For 'Plant Anatomy Collection', edit the name of the image in line 17.
+      For 'Plant Systematics', edit the name of the image in line 21.
+
+Q: How to change the headline and the content of the projects?
+A: 1. Open file 'app/views/basics/home.html.erb'
+   2. For 'Virtual Herbarium', edit the description in line 11.
+      For 'Tompkins County Flora', edit the description in line 15.
+      For 'Plant Anatomy Collection', edit the description in line 19.
+      For 'Plant Systematics', edit the description in line 23.
+
+
+=== About ===
+
+Q: How to edit the 'Overview'?
+A: 1. Open file 'app/views/basics/about.html.erb'
+   2. Go to line 26 and edit the contents.
+
+Q: How to edit the 'Origins'?
+A: 1. Open file 'app/views/basics/about.html.erb'
+   2. Go to line 31 and edit the contents.
+
+Q: How to edit the '20th Century'?
+A: 1. Open file 'app/views/basics/about.html.erb'
+   2. Go to line 37 and edit the contents.
+
+Q: How to edit the 'Present Day'?
+A: 1. Open file 'app/views/basics/about.html.erb'
+   2. Go to line 44 and edit the contents.
+
+
+=== Palm Collection ===
+
+Q: How to edit the headline?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 5 and edit the content
+
+Q: How to edit the title for the first section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 8 and edit the title
+
+Q: How to edit the subtitle for the first section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 9 and edit the subtitle
+
+Q: How to edit the content for the first section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 10 and edit the body
+
+Q: How to change the image for the first section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/palm.html.erb'
+   3. Go to line 12 and replace 'palm-collection.jpg' with the name of the new image   
+
+Q: How to edit the title for the second section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 17 and edit the title
+
+Q: How to edit the subtitle for the second section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 18 and edit the subtitle
+
+Q: How to edit the content for the second section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 19 and edit the body
+
+Q: How to change the image for the second section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/palm.html.erb'
+   3. Go to line 20 and replace 'palm-sample.jpg' with the name of the new image
+
+Q: How to edit the title for the third section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 26 and edit the title
+
+Q: How to edit the subtitle for the third section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 26 and edit the subtitle
+
+Q: How to edit the content for the third section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 28 and edit the body
+
+Q: How to change the image for the third section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/palm.html.erb'
+   3. Go to line 29 and replace 'roth1.jpg' with the name of the new image
+
+
+=== Bryophyte Collection ===
+
+Q: How to edit the headline?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 5 and edit the content
+
+Q: How to edit the title for the first section?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 8 and edit the title
+
+Q: How to edit the subtitle for the first section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 9 and edit the subtitle
+
+Q: How to edit the content for the first section?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 10 and edit the body
+
+Q: How to change the image for the first section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/bryophyte.html.erb'
+   3. Go to line 13 and replace 'palm-collection.jpg' with the name of the new image   
+
+Q: How to edit the title for the second section?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 18 and edit the title
+
+Q: How to edit the subtitle for the second section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 19 and edit the subtitle
+
+Q: How to edit the content for the second section?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 20 and edit the body
+
+Q: How to change the image for the second section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/bryophyte.html.erb'
+   3. Go to line 21 and replace 'sample.jpg' with the name of the new image
+   
+Q: How to edit the title for the third section?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 25 and edit the title
+
+Q: How to edit the subtitle for the third section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 26 and edit the subtitle
+
+Q: How to edit the content for the third section?
+A: 1. Open file 'app/views/basics/bryophyte.html.erb'
+   2. Go to line 27 and edit the body
+
+Q: How to change the image for the third section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/bryophyte.html.erb'
+   3. Go to line 28 and replace 'roth1.jpg' with the name of the new image
+
+
+=== Muller Oak Collection ===
+
+Q: How to edit the headline?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 5 and edit the content
+
+Q: How to edit the title for the first section?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 8 and edit the title
+
+Q: How to edit the subtitle for the first section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 9 and edit the subtitle
+
+Q: How to edit the content for the first section?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 10 and edit the body
+
+Q: How to change the image for the first section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/oak.html.erb'
+   3. Go to line 11 and replace 'muller-seal.jpg' with the name of the new image   
+
+Q: How to edit the title for the second section?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 17 and edit the title
+
+Q: How to edit the subtitle for the second section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 18 and edit the subtitle
+
+Q: How to edit the content for the second section?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 19 and edit the body
+
+Q: How to change the image for the second section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/oak.html.erb'
+   3. Go to line 20 and replace 'CMuller.jpg' with the name of the new image
+   
+Q: How to edit the title for the third section?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 26 and edit the title
+
+Q: How to edit the subtitle for the third section?
+A: 1. Open file 'app/views/basics/palm.html.erb'
+   2. Go to line 27 and edit the subtitle
+
+Q: How to edit the content for the third section?
+A: 1. Open file 'app/views/basics/oak.html.erb'
+   2. Go to line 28 and edit the body
+
+Q: How to change the image for the third section?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/oak.html.erb'
+   3. Go to line 30 and replace 'mulleroak.jpg' with the name of the new image
+
+
+=== Additional Collections ===
+
+Q: How to edit the content of "The Gymnosperm Collection"?
+A: 1. Open file 'app/views/basics/collections.html.erb'
+   2. Go to line 8 to edit the title  and line 10 to edit the body
+
+Q: How to change the image for "The Gymnosperm Collection"?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/collections.html.erb'
+   3. Go to line 11 and replace 'muller-seal.jpg' with the name of the new image
+
+Q: How to edit the content of "Crassulaceae"?
+A: 1. Open file 'app/views/basics/collections.html.erb'
+   2. Go to line 17 to edit the title  and line 19 to edit the body
+
+Q: How to change the image for "Crassulaceae"?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/collections.html.erb'
+   3. Go to line 20 and replace 'palm-sample.jpg' with the name of the new image
+
+Q: How to edit the content of "Rubus"?
+A: 1. Open file 'app/views/basics/collections.html.erb'
+   2. Go to line 26 to edit the title  and line 28 to edit the body    
+
+Q: How to change the image for "Rubus"?
+A: 1. Put the new image into folder 'app/assets/images/'
+   2. Open file 'app/views/basics/collections.html.erb'
+   3. Go to line 29 and replace 'mulleroak.jpg' with the name of the new image
+
+
+=== Contact ===
+
+Q: How to edit the 'General Contact Information'?
+A: 1. Open file 'app/views/basics/_general_contact_info.html.erb'
+   2. Go to line 8 to edit the description;
+      go to line 19 to edit the email address;
+      go to line 23 to edit the fax number;
+      go to line 27 to edit the location;
+      go to line 31 to edit the hours.
+
+Q: How to edit everybody's information?
+A: 1. Open file 'app/views/basics/contact.html.erb'
+   2. For Kevin, edit line 10-18;
+      for Anna, edit line 21-28;
+      for Peter, edit line 31-38;
+      for Dr. Jim Reveal, edit line 43-47;
+      for Dr. Vern Durkee, edit line 49-53.
+
+Q: How to edit volunteers' information?
+A: 1. Put the new images into folder 'app/assets/images/' if there's any
+   2. Open file 'app/views/basics/contact.html.erb'
+   3. Edit line 59-64
+
+
+
